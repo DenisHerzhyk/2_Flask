@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>index</title>
+{% endblock %}
+
+{% block body %}
+<form action="/result" method="POST">
+    <label>Enter string to count words:</label>
+    <input type="text" name="text">
+    <br><br>
+    <a href="/result"><button type="submit">Count it</button></a>
+</form>
+{% endblock %}
